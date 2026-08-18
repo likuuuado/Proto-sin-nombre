@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dborcvr1x6j1"]
+
+[ext_resource type="Script" uid="uid://ccxf243g8ve1k" path="res://Player_Movement.gd" id="1_4flbx"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3em1u"]
+
+[node name="Player" type="CharacterBody3D" unique_id=417216563]
+script = ExtResource("1_4flbx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=549014822]
+shape = SubResource("CapsuleShape3D_3em1u")
+debug_color = Color(1, 0, 0.14901961, 1)
